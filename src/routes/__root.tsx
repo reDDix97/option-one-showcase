@@ -11,6 +11,9 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import { WhatsAppButton } from "../components/WhatsAppButton";
 
 function NotFoundComponent() {
   return (
@@ -77,19 +80,42 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Option One Interior — Luxury Interior Design & Architecture in Dhaka" },
+      { name: "description", content: "Award-winning interior design, architecture and construction studio in Uttara, Dhaka. Crafting timeless residences, offices and commercial spaces." },
+      { name: "author", content: "Option One Interior" },
+      { property: "og:title", content: "Option One Interior — Luxury Interior Design in Dhaka" },
+      { property: "og:description", content: "Designing spaces that inspire. Residential, commercial and architectural design by Option One Interior, Uttara, Dhaka." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#111111" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Option One Interior",
+          image: "/og.jpg",
+          telephone: "+8801711371372",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "House-01, Road-15, Sector-12, Uttara",
+            addressLocality: "Dhaka",
+            postalCode: "1230",
+            addressCountry: "BD",
+          },
+          aggregateRating: { "@type": "AggregateRating", ratingValue: "4.6", reviewCount: "120" },
+        }),
       },
     ],
   }),
@@ -118,8 +144,14 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="min-h-screen flex flex-col bg-background text-foreground">
+        <Navbar />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
     </QueryClientProvider>
   );
 }
