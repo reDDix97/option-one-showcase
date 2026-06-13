@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/about</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/services</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/the-marble-duplex</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/meridian-corporate-hq</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/rosewood-master-suite</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/atelier-kitchen</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/verdant-supper-club</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/portfolio/stone-and-cedar-villa</loc><changefreq>monthly</changefreq></url>
+  <url><loc>/contact</loc><changefreq>monthly</changefreq></url>
+</urlset>
