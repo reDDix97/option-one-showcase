@@ -4,7 +4,7 @@
   "outputDirectory": ".output/public",
   "rewrites": [
     {
-      "source": "/((?!api/|assets/|favicon.ico|robots.txt|sitemap.xml).*)",
+      "source": "/((?!assets/|favicon.ico|robots.txt|sitemap.xml).*)",
       "destination": "/index.html"
     }
   ]
