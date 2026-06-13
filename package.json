@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && bun scripts/prepare-static-output.ts",
     "build:dev": "vite build --mode development",
+    "serve:static": "bunx serve .output/public",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
