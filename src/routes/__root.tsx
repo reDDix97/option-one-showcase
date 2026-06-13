@@ -83,11 +83,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Option One Interior — Luxury Interior Design & Architecture in Dhaka" },
       { name: "description", content: "Award-winning interior design, architecture and construction studio in Uttara, Dhaka. Crafting timeless residences, offices and commercial spaces." },
       { name: "author", content: "Option One Interior" },
-      { property: "og:title", content: "Option One Interior — Luxury Interior Design in Dhaka" },
-      { property: "og:description", content: "Designing spaces that inspire. Residential, commercial and architectural design by Option One Interior, Uttara, Dhaka." },
+      { property: "og:title", content: "Option One Interior — Luxury Interior Design & Architecture in Dhaka" },
+      { property: "og:description", content: "Award-winning interior design, architecture and construction studio in Uttara, Dhaka. Crafting timeless residences, offices and commercial spaces." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "theme-color", content: "#111111" },
+      { name: "twitter:title", content: "Option One Interior — Luxury Interior Design & Architecture in Dhaka" },
+      { name: "twitter:description", content: "Award-winning interior design, architecture and construction studio in Uttara, Dhaka. Crafting timeless residences, offices and commercial spaces." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/46c75e16-5873-4fd5-aaed-093e3789ee5e/id-preview-39a22af3--e9c9fa54-b2fc-444d-949a-93f1e060712c.lovable.app-1781337975176.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/46c75e16-5873-4fd5-aaed-093e3789ee5e/id-preview-39a22af3--e9c9fa54-b2fc-444d-949a-93f1e060712c.lovable.app-1781337975176.png" },
     ],
     links: [
       {
